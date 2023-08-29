@@ -1,0 +1,319 @@
+@font-face {
+    font-family: "Signlode";
+    src: url(../fuente/Signlode.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+a {color: rgb(208, 203, 203);}
+
+body {background-color: beige;}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    width: 100%;
+}
+
+.logo {width: 50px;}
+
+
+.sidebar a {
+    text-decoration: none;
+    padding-right: 45px;
+    padding-left: 45px;
+    font-size: 20px;
+    font-family: sans-serif;
+    opacity: 0.7;
+    color: white;
+}
+
+.sidebar a:hover,.sidebar a:active {
+    background: #4e4e4e;
+    cursor: pointer;
+
+}
+
+button {
+    background: black;
+    border: none;
+    display: block;
+    cursor: pointer;
+    
+}
+
+button img {
+    width: 30px;
+   
+}
+
+.logo {width: 50px;}
+
+.pie_de_pagina {
+    display: flex;
+    font-size: 15px;
+    font-family: "Signlode";
+    justify-content: right;
+    
+}
+
+h1{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+.alquiler-casas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.casalquiler {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    border: 10px solid black;
+    padding: 0px;
+    margin: 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+.casalquiler img {
+    width: 580px;
+    height: 500px;
+}
+
+.descripcion-casalquiler {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+
+}
+
+.casalquiler h5 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.venta-casas{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 60px;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.casaventa {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    border: 10px solid black;
+    padding: 0px;
+    margin: 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+.casaventa img {
+    width: 580px;
+    height: 500px;
+}
+.descripcion-casaventa {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.casaventa h5 {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-alquiler {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 60px;
+margin-bottom: 40px;
+color: white;
+}
+
+.formulario-compra {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 60px;
+margin-bottom: 40px;
+color: white;
+}
+
+.form-control{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control:nth-child(even){
+    background: green;
+}
+
+.form-control:nth-child(odd){
+    background: blue;
+}
+
+.desarrollo-gf h2{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.desarrollo-gf p{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.descripcion-inmobiliaria h1{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.descripcion-inmobiliaria h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.descripcion-inmobiliaria h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.descripcion-inmobiliaria h4{
+    display: flex;
+    justify-content: center;
+}
+.descripcion-inmobiliaria h5{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.main-inicio-grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 300px 1fr
+    1fr 1 fr;
+    gap: 10px;
+    grid-template-areas: 
+    "descripcion-inmobiliaria descripcion-inmobiliaria desarrollo-gf"
+    "videos-inicio1 videos-inicio1 desarrollo-gf"
+    "videos-inicio2 videos-inicio2 desarrollo-gf"
+    "videos-inicio3 videos-inicio3 desarrollo-gf";
+}
+
+.desarrollo-gf{
+margin-top: 150px;
+grid-area: desarrollo-gf;
+background-color: black;
+color: rgb(255, 255, 255);
+padding: 10px;
+}
+
+.descripcion-inmobiliaria{
+    grid-area: descripcion-inmobiliaria;
+}
+
+.videos-inicio1{
+    margin-top: 70px;   
+    grid-area: videos-inicio1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.videos-inicio2{
+    margin-top: 70px;   
+    grid-area: videos-inicio2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.videos-inicio3{
+    margin-top: 70px;   
+    grid-area: videos-inicio3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.active{
+    border-bottom: 5px solid white;
+}
+
+.navegacion #check-menu{
+    display: none;
+}
+
+
+
+
+.card-imagen{
+    opacity: 0.5;
+}
+
+.card-imagen:hover{
+    opacity: 1;
+}
+
+@media (max-width: 768px){
+    
+   
+
+    .navegacion .sidebar{
+        display: none;
+    }
+    .navegacion label{
+    display: block;}
+
+    .navegacion #check-menu:checked~.sidebar{
+        background: red;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+ }
+   
+
+@media (max-width: 480px) {
+    
+}
