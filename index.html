@@ -3,13 +3,20 @@
    
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-
+        <!--meta view port de boostrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <!--boostrap-->
-        <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
 
+        
         <!--my styles-->
         <link rel="stylesheet" href="./css/style.css">
 
+
+
+        
         <!--custom pestaña-->
         <title>GF Real Estate - Inicio</title>    
         <link rel="shortcut icon" href="./imagene/logo gf real estate.jpeg" >
@@ -17,35 +24,46 @@
 </head>
 <body>
     <header class="encabezado">
-        <nav class="navegacion"> 
-                
-            <!--checkbox mobile-->
-            <input type="checkbox" id="check-menu">
-           
-            <ul class="sidebar">
-                 <li class="nav-item"><a href="index.html"><img src="./imagene/logo gf real estate.jpeg" alt="logo de gfrealstate" class="logo"></a></li>
-                <li class="nav-item active"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="./pages/pedidoscompra.html">Pedidos de compra</a></li>
-                <li class="nav-item"><a href="./pages/pedidosalquiler.html">Pedidos de alquiler</a></li>
-                <li class="nav-item"><a href="./pages/inmueblesventa.html">Inmuebles a la venta</a></li>
-                <li class="nav-item"><a href="./pages/inmueblesalquiler.html">Inmuebles en alquiler</a></li>
-        <!--Comentario que no se va a ver-->
-
-            </ul>  
-            
-
-        <!--Nav Mobile-->
-            <label for="check-menu">
-                <i class="bx-menu"> </i>
-            </label>
-            
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="logo d-inline-block align-text-center" src="./imagene/logo gf real estate.jpeg" alt="logo-de-empresa">
+          Real Estate</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active aria-current" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pedidos
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="./pages/pedidoscompra.html">Pedidos de compra</a></li>
+                  <li><a class="dropdown-item" href="./pages/pedidosalquiler.html">Pedidos de alquiler</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inmuebles
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="./pages/inmueblesventa.html">Inmuebles en Venta</a></li>
+                  <li><a class="dropdown-item" href="./pages/inmueblesalquiler.html">Inmuebles en Alquiler</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
    </header>
-           
+
     <main class="main-inicio-grid">       
 
         <div class="descripcion-inmobiliaria">
-
+           
             <h1>GF</h1>
    
             <h2><em>Real Estate</em></h2>
@@ -53,46 +71,42 @@
         </div>
 
 
-        <section class="videos-inicio1">
-            <div class="card">
-                <iframe width="450" height="350" src="https://www.youtube.com/embed/Q575qVcZYLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="card">
-                <iframe width="450" height="350" src="https://www.youtube.com/embed/E9vGDvB5UYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+        <section class="videos-inicio1">  
+            <iframe width="450" height="350" src="https://www.youtube.com/embed/Q575qVcZYLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>   
+        <section class="videos-inicio2"> 
+            <iframe width="450" height="350" src="https://www.youtube.com/embed/E9vGDvB5UYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
 
-        <section class="videos-inicio2">
-            
+        <section class="videos-inicio3">
             <iframe width="450" height="350" src="https://www.youtube.com/embed/b7aQqAFio2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+        </section>
+            <section class="videos-inicio4">
             <iframe width="450" height="350" src="https://www.youtube.com/embed/1jGtsGSDpz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>   
 
-        <section class="videos-inicio3">
-            
+        <section class="videos-inicio5">   
             <iframe width="450" height="350" src="https://www.youtube.com/embed/xE437vFHPUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
+        </section>
+
+        <section class="videos-inicio6">
             <iframe width="450" height="350" src="https://www.youtube.com/embed/CfEOwQnd-OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
 
         <div class="desarrollo-gf">
-            <h2>Noticias</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat fugiat molestiae eius vitae aperiam tenetur esse, quam enim quo sed est inventore in et deleniti sapiente doloribus pariatur animi!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nam et, placeat ipsum doloribus praesentium dicta unde voluptate soluta expedita, possimus omnis numquam? Facilis itaque, laboriosam nulla facere provident eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat fugiat molestiae eius vitae aperiam tenetur esse, quam enim quo sed est inventore in et deleniti sapiente doloribus pariatur animi!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nam et, placeat ipsum doloribus praesentium dicta unde voluptate soluta expedita, possimus omnis numquam? Facilis itaque, laboriosam nulla facere provident eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat fugiat molestiae eius vitae aperiam tenetur esse, quam enim quo sed est inventore in et deleniti sapiente doloribus pariatur animi!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nam et, placeat ipsum doloribus praesentium dicta unde voluptate soluta expedita, possimus omnis numquam? Facilis itaque, laboriosam nulla facere provident eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat fugiat molestiae eius vitae aperiam tenetur esse, quam enim quo sed est inventore in et deleniti sapiente doloribus pariatur animi!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nam et, placeat ipsum doloribus praesentium dicta unde voluptate soluta expedita, possimus omnis numquam? Facilis itaque, laboriosam nulla facere provident eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat fugiat molestiae eius vitae aperiam tenetur esse, quam enim quo sed est inventore in et deleniti sapiente doloribus pariatur animi!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nam et, placeat ipsum doloribus praesentium dicta unde voluptate soluta expedita, possimus omnis numquam? Facilis itaque, laboriosam nulla facere provident eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repellat fugiat molestiae eius vitae aperiam tenetur esse, quam enim quo sed est inventore in et deleniti sapiente doloribus pariatur animi!
-
-
+            <h4><em>Noticias</em></h4>
+            <p><em>La oferta de inmuebles está en alza debido a la suba del dolar, lo cual está ocasionando perdidas en el valor adquisitivo de las personas, las cuales se ven en la necesidad de vender.</em>
             </p>
+            <img class="foto-noticia" src="./imagene/noticia-casas.jpg" alt="foto de analisis del mercado">
+            
         </div> 
     </main>
+
 
     <footer class="pie_de_pagina" id="fin">&COPY; GF Real Estate</footer>
 
     <!--boostrap js-->
     <script src="./js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

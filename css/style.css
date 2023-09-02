@@ -8,9 +8,9 @@ margin: 0;
 padding: 0;
 }
 
-a {color: rgb(208, 203, 203);}
+a {color: rgb(255, 255, 255);}
 
-body {background-color: beige;}
+body {background-color: rgb(25, 25, 25);}
 
 nav {
     display: flex;
@@ -42,7 +42,7 @@ nav {
 }
 
 button {
-    background: black;
+    background: rgb(0, 0, 0);
     border: none;
     display: block;
     cursor: pointer;
@@ -61,23 +61,16 @@ button img {
     font-size: 15px;
     font-family: "Signlode";
     justify-content: right;
-    
+    color: #9c9c9c;
 }
 
 h1{
+   color: rgb(255, 255, 255);
     display: flex;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 50px;
     justify-content: center;
 }
-
-.sidebar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
 
 
 .alquiler-casas {
@@ -152,98 +145,103 @@ h1{
     justify-content: center;
 }
 
-.formulario-alquiler {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 60px;
-margin-bottom: 40px;
-color: white;
-}
-
-.formulario-compra {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 60px;
-margin-bottom: 40px;
-color: white;
-}
 
 .form-control{
     display: flex;
-    background-color: black;
+    background-color: rgb(158, 158, 158);
     align-items: center;
     justify-content: center;
-}
-
-.form-control:nth-child(even){
-    background: green;
-}
-
-.form-control:nth-child(odd){
-    background: blue;
-}
-
-.desarrollo-gf h2{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.desarrollo-gf p{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.descripcion-inmobiliaria h1{
-    margin-bottom: 0;
-    display: flex;
-    justify-content: center;
-}
-.descripcion-inmobiliaria h2{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.descripcion-inmobiliaria h3{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-.descripcion-inmobiliaria h4{
-    display: flex;
-    justify-content: center;
-}
-.descripcion-inmobiliaria h5{
-    display: flex;
-    justify-content: center;
- 
-}
-
-.main-inicio-grid{
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: 300px 1fr
-    1fr 1 fr;
-    gap: 10px;
-    grid-template-areas: 
-    "descripcion-inmobiliaria descripcion-inmobiliaria desarrollo-gf"
-    "videos-inicio1 videos-inicio1 desarrollo-gf"
-    "videos-inicio2 videos-inicio2 desarrollo-gf"
-    "videos-inicio3 videos-inicio3 desarrollo-gf";
 }
 
 .desarrollo-gf{
 margin-top: 150px;
 grid-area: desarrollo-gf;
-background-color: black;
-color: rgb(255, 255, 255);
+background-color: beige;
+color: rgb(0, 0, 0);
 padding: 10px;
 }
+
+.desarrollo-gf h4{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: #000000;
+}
+
+.desarrollo-gf p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.foto-noticia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.descripcion-inmobiliaria h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.descripcion-inmobiliaria h2{
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.main-inicio-grid{
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows:15% 1fr
+    1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "descripcion-inmobiliaria descripcion-inmobiliaria desarrollo-gf"
+    "videos-inicio1 videos-inicio2 desarrollo-gf"
+    "videos-inicio3 videos-inicio4 desarrollo-gf"
+    "videos-inicio5 videos-inicio6 desarrollo-gf";
+}
+
+@media (max-width: 480px) {
+    .main-inicio-grid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 99%;
+        grid-template-rows: 50px 1fr
+        0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        ;
+        grid-template-areas: 
+        "descripcion-inmobiliaria"
+        "desarrollo-gf"
+        "videos-inicio1"
+        "videos-inicio2"
+        "videos-inicio3"
+        "videos-inicio4"
+        "videos-inicio5"
+        "videos-inicio6";
+    }
+    .descripcion-inmobiliaria h1{
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+    .pie_de_pagina{
+        margin-top: 40px;
+        color: #9c9c9c;
+    }
+}
+
+
+
+
 
 .descripcion-inmobiliaria{
     grid-area: descripcion-inmobiliaria;
@@ -270,15 +268,30 @@ padding: 10px;
     justify-content: space-around;
 }
 
+.videos-inicio4{
+    margin-top: 70px;   
+    grid-area: videos-inicio4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.videos-inicio5{
+    margin-top: 70px;   
+    grid-area: videos-inicio5;
+    display: flex;
+    justify-content: space-around;
+}
+
+.videos-inicio6{
+    margin-top: 70px;   
+    grid-area: videos-inicio6;
+    display: flex;
+    justify-content: space-around;
+}
+
 .active{
     border-bottom: 5px solid white;
 }
-
-.navegacion #check-menu{
-    display: none;
-}
-
-
 
 
 .card-imagen{
@@ -289,30 +302,22 @@ padding: 10px;
     opacity: 1;
 }
 
+<!--postboostrap-->
+
+.dropdown-menu{
+    background-color: gray;
+}
+
+.dropdown-item:hover{
+    background-color: gainsboro;
+}
+
+
+
+
 @media (max-width: 768px){
-    
-   
 
-    .navegacion .sidebar{
-        display: none;
-    }
-    .navegacion label{
-    display: block;}
-
-    .navegacion #check-menu:checked~.sidebar{
-        background: red;
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        top: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-    }
- }
-   
+}
 
 @media (max-width: 480px) {
     

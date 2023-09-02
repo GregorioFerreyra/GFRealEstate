@@ -1,59 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GF Real Estate - En venta</title> 
-    <link rel="stylesheet" href="../css/style.css">
+<html>
    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!--meta view port de boostrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--boostrap-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        
+        <!--my styles-->
+        <link rel="stylesheet" href="../css/style.css">
+
+
+
+        
+        <!--custom pestaña-->
+        <title>GF Real Estate - Pedidos de compra</title>    
+        <link rel="shortcut icon" href="../imagene/logo gf real estate.jpeg" >
+
 </head>
 <body>
     <header class="encabezado">
-        <nav class="navegacion"> 
-        
-           
-            <ul class="sidebar">
-                <li class="nav-item"><a href="../index.html"><img src="../imagene/logo gf real estate.jpeg" alt="logo de gfrealstate" class="logo"></a></li>
-                <li class="nav-item"><a href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a href="./pedidoscompra.html">Pedidos de compra</a></li>
-                <li class="nav-item"><a href="./pedidosalquiler.html">Pedidos de alquiler</a></li>
-                <li class="nav-item active"><a href="./inmueblesventa.html">Inmuebles a la venta</a></li>
-                <li class="nav-item"><a href="./inmueblesalquiler.html">Inmuebles en alquiler</a></li>
-        <!--Comentario que no se va a ver-->
-    
-            </ul>  
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              
+              
+              <a class="navbar-brand" href="../index.html"><img class="logo d-inline-block align-text-center" src="../imagene/logo gf real estate.jpeg" alt="logo-de-empresa">
+              Real Estate</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+             
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Pedidos
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="./pedidoscompra.html">Pedidos de compra</a></li>
+                      <li><a class="dropdown-item" href="./pedidosalquiler.html">Pedidos de alquiler</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle aria-current" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Inmuebles
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item aria-current" href="./inmueblesventa.html">Inmuebles en Venta</a></li>
+                      <li><a class="dropdown-item" href="./inmueblesalquiler.html">Inmuebles en Alquiler</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
+
     <main class="i-venta">
+
         <h1>Inmuebles a la venta</h1>
+      
+        <!--Casas 1 y 2 cards-->
+      <div class="container text-center mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 1.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1- "Valle Escondido".</h5>
+                <p class="card-text">Casa a la venta en el barrio "Valle Escondido".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>              
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 2.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2- "La Carolina".</h5>
+                <p class="card-text">Casa a la venta en el barrio "La Carolina".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>            
+          </div>
+        </div>
 
-        <section class="venta-casas">
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 1.jpg" alt="casa a la venta1" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Casa a la venta en el barrio "Valle Escondido".</h5></div>
+        
+      </div>
+       
+  
+        <!--Casas 3 y 4 cards-->
+      <div class="container text-center mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 1.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1- "Valle Escondido".</h5>
+                <p class="card-text">Casa a la venta en el barrio "Valle Escondido".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>              
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 2.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2- "La Carolina".</h5>
+                <p class="card-text">Casa a la venta en el barrio "La Carolina".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
 
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 2.jpg" alt="casa a la venta2" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Casa a la venta en el barrio "La Carolina".</h5></div>
+        <!--Casas 5 y 6 cards-->
+      <div class="container text-center mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 1.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1- "Valle Escondido".</h5>
+                <p class="card-text">Casa a la venta en el barrio "Valle Escondido".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>              
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 2.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2- "La Carolina".</h5>
+                <p class="card-text">Casa a la venta en el barrio "La Carolina".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
 
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 3.jpg" alt="casa a la venta3" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Casa a la venta en el barrio "Cofico".</h5></div>
+        <!--Casas 7 y 8 cards-->
+      <div class="container text-center mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 1.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">1- "Valle Escondido".</h5>
+                <p class="card-text">Casa a la venta en el barrio "Valle Escondido".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>              
+          </div>
+          <div class="col">
+            <div class="card text-bg-dark mb-3 h-100" style="width: 100%;">
+              <img src="../imagene/casas a la venta/casa a la venta 2.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">2- "La Carolina".</h5>
+                <p class="card-text">Casa a la venta en el barrio "La Carolina".</p>
+                <a href="./pedidoscompra.html" class="btn btn-primary">Interesa</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
 
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 4.jpg" alt="casa a la venta4" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Departamento a la venta en el barrio "Villa Belgrano".</h5></div>
-
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 5.jpg" alt="casa a la venta5" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Casa a la venta en el barrio "Las Delicias".</h5></div>
-
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 6.jpg" alt="casa a la venta6" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Casa a la venta en el barrio "Santina Norte".</h5></div>
-
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 7.jpg" alt="casa a la venta7" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Casa a la venta en el barrio "El Refugio".</h5></div>
-
-            <div class="casaventa"> <img src="../imagene/casas a la venta/casa a la venta 8.jpg" alt="casa a la venta8" class="card-imagen"> 
-            <h5 class="descripcion-casaventa">Casa a la venta en el barrio "Manantiales".</h5></div>
-
-        </section>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </main>
     <footer class="pie_de_pagina" id="fin">&COPY; GF Real Estate</footer>
+
+    <!--boostrap js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
