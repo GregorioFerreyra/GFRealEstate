@@ -63,35 +63,33 @@
     <main class="p-compra">
     
         <h1>Pedidos de compra</h1>
-    
-        <!--column para formulario-->
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col">
-              <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label"><em>Nombre Completo</em></label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Colocar nombre completo aquí">
-              </div>
-            </div>
-            <div class="col">
-              <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label"><em>Apellidos</em></label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Colocar apellidos aquí">
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <!--column para lista-->
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col">
-              Lista
-            </div>
-          </div>
-        </div>
+     
+              <form class="formulario-compra">
+                  <div class="form-control">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" placeholder="ingrese aqui su nombre" id="nombre">
+                  </div>
+                  <div class="form-control">
+                      <label for="apellido">Apellido</label>
+                      <input type="text" placeholder="ingrese aqui su apellido" id="apellido">
+                  </div>
+                  <div class="form-control">
+                      <label for="email">Email</label>
+                      <input type="email" placeholder=" gfrealstate@gmail.com" id="email">
+                  </div>
+                  <div class="form-control">
+                      <label for="mensaje">Mensaje</label>
+                      <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="ingrese aqui su mensaje">
+                      </textarea>
+                  </div>
+                  <div>
+                      <input type="submit" value="Enviar">
+                      <input type="reset" value="Cancelar">
+                  </div>
+              </form>
+  
+      
+        
     </main>
     <footer class="pie_de_pagina" id="fin">&COPY; GF Real Estate</footer>
         
