@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Signlode";
+    src: url(../fuente/Signlode.ttf);
+}
+
+@import "./partials/reset";
+
+@import "./partials/variables";
+
+@import "./partials/home";
+
+@import "./partials/nav";
+
+
+body {background-color: $color-principal;}
+
+
+
+.card{
+ transition: transform 0.5s;
+    &:hover{
+    transform: scale(1.03);}
+}
+
+.pie_de_pagina {
+    display: flex;
+    font-size: 15px;
+    font-family: "Signlode";
+    justify-content: right;
+    color: #9c9c9c;
+}
+
+h1{
+   color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    justify-content: center;
+    transition: transform 1s;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+.form-control{
+    display: flex;
+    background-color: rgb(158, 158, 158);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.p-alquiler{
+    label{
+        color: #ffffff;
+    }
+
+    .form-select{
+        background-color: #9c9c9c;
+    }
+}
+
+
+.p-compra{
+    label{
+        color: #ffffff;
+    }
+
+    .form-select{
+        background-color: #9c9c9c;
+    }
+}
+
+@import "./partials/responsive";
+
+
+
+
+
+
+

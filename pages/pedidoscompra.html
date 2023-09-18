@@ -12,7 +12,7 @@
 
         
         <!--my styles-->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../scss/style.css">
 
 
 
@@ -20,6 +20,9 @@
         <!--custom pestaña-->
         <title>GF Real Estate - Pedidos de compra</title>    
         <link rel="shortcut icon" href="../imagene/logo gf real estate.jpeg" >
+
+        <meta name="description" content="Descubre tu hogar ideal con GF Real Estate. Nos adaptamos a tus preferencias para vender lo que quieras.">
+        <meta name="keywords" content="inmobiliaria, compra de viviendas, venta de propiedades, alquiler de inmuebles, casas en venta, apartamentos en alquiler, bienes raíces, asesoría inmobiliaria, propiedades en venta, inmuebles en tu ciudad">
 
 </head>
 <body>
@@ -64,29 +67,66 @@
     
         <h1>Pedidos de compra</h1>
      
-              <form class="formulario-compra">
-                  <div class="form-control">
-                      <label for="nombre">Nombre</label>
-                      <input type="text" placeholder="ingrese aqui su nombre" id="nombre">
-                  </div>
-                  <div class="form-control">
-                      <label for="apellido">Apellido</label>
-                      <input type="text" placeholder="ingrese aqui su apellido" id="apellido">
-                  </div>
-                  <div class="form-control">
-                      <label for="email">Email</label>
-                      <input type="email" placeholder=" gfrealstate@gmail.com" id="email">
-                  </div>
-                  <div class="form-control">
-                      <label for="mensaje">Mensaje</label>
-                      <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="ingrese aqui su mensaje">
-                      </textarea>
-                  </div>
-                  <div>
-                      <input type="submit" value="Enviar">
-                      <input type="reset" value="Cancelar">
-                  </div>
-              </form>
+        <div class="container-fluid">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Apellido/s y Nombre/s</label>
+              <input type="text" class="form-control" id="inputname"
+              placeholder="Riquelme, Juan Román">
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail"
+              placeholder="GFRealEstate@gmail.com">
+            </div>
+            <div class="col-md-6">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Palermo Bajo 1965">
+            </div>
+            <div class="col-md-6">
+              <label for="inputNumber" class="form-label">Numero de teléfono</label>
+              <input type="number" class="form-control" id="inputNumber" placeholder="+54-3517672656">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Especificaciones</label>
+              <input type="text" class="form-control" id="inputCity"
+              placeholder="Casa/Departamento. X habitaciones">
+            </div>
+            <div class="col-md-3">
+              <label for="inputHouse" class="form-label">Inmueble de interes</label>
+              <select id="inputHouse" class="form-select">
+                <option selected>-</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>Otro</option>
+              </select>
+              
+            </div>
+            <div class="col-md-3">
+              <label for="inputNumber" class="form-label">Presupuesto (usd)</label>
+              <input type="number" class="form-control" id="inputNumber" placeholder="200000">
+            </div>
+              
+            </div>
+            <div class="col-10 m-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Acepta compartir sus datos.
+                </label>
+              </div>
+            </div>
+            <div class="col-md-2 m-3">
+              <button type="submit" class="btn btn-success">Enviar</button>
+              <button type="reset" class="btn btn-danger">Cancelar</button>
+            </div>
+          </form>
   
       
         

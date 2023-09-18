@@ -1,0 +1,31 @@
+
+
+@media (max-width: 1100px) {
+    .main-inicio-grid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 99%;
+        grid-template-rows: 50px 1fr
+        0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        ;
+        grid-template-areas: 
+        "descripcion-inmobiliaria"
+        "desarrollo-gf"
+        "videos-inicio1"
+        "videos-inicio2"
+        "videos-inicio3"
+        "videos-inicio4"
+        "videos-inicio5"
+        "videos-inicio6";
+    }
+    
+    .descripcion-inmobiliaria h1{
+        margin-top: 50px;
+        margin-bottom: 5px;
+    }
+    .pie_de_pagina{
+        margin-top: 40px;
+        color: #9c9c9c;
+    }
+
+}

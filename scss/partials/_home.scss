@@ -1,0 +1,111 @@
+
+.main-inicio-grid{
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows:15% 1fr
+    1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "descripcion-inmobiliaria descripcion-inmobiliaria desarrollo-gf"
+    "videos-inicio1 videos-inicio2 desarrollo-gf"
+    "videos-inicio3 videos-inicio4 desarrollo-gf"
+    "videos-inicio5 videos-inicio6 desarrollo-gf";
+    
+    .descripcion-inmobiliaria{
+    grid-area: descripcion-inmobiliaria;
+    }
+
+    .videos-inicio1{
+    margin-top: 70px;   
+    grid-area: videos-inicio1;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .videos-inicio2{
+    margin-top: 70px;   
+    grid-area: videos-inicio2;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .videos-inicio3{
+    margin-top: 70px;   
+    grid-area: videos-inicio3;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .videos-inicio4{
+    margin-top: 70px;   
+    grid-area: videos-inicio4;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .videos-inicio5{
+    margin-top: 70px;   
+    grid-area: videos-inicio5;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .videos-inicio6{
+    margin-top: 70px;   
+    grid-area: videos-inicio6;
+    display: flex;
+    justify-content: space-around;
+    }
+
+    iframe{
+    transition: transform 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    .descripcion-inmobiliaria{
+        h1{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        }
+        
+        h2{
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+        }
+    }
+    .desarrollo-gf{
+    margin-top: 150px;
+    grid-area: desarrollo-gf;
+    background-color: beige;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    
+        h4{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        color: #000000;
+        }
+    
+        p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        }
+        .foto-noticia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+        }
+    }
+}
