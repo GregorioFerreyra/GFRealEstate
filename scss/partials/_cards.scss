@@ -1,0 +1,8 @@
+.card{
+    transition: transform 0.5s;
+       &:hover{
+       transform: scale(1.03);}
+       .btn-int{
+           background-color: #d0ff00;
+       }
+   }

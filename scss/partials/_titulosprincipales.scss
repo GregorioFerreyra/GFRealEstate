@@ -1,0 +1,13 @@
+h1{
+    color: rgb(255, 255, 255);
+     display: flex;
+     margin-top: 70px;
+     margin-bottom: 50px;
+     justify-content: center;
+     transition: transform 1s;
+ 
+     &:hover{
+         transform: scale(1.2);
+     }
+ }
+ 

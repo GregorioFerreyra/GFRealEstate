@@ -131,6 +131,42 @@ nav .nav-link:hover {
   transform: translate(0px, 5px);
 }
 
+.form-control {
+  display: flex;
+  background-color: #cfcfcf;
+  justify-content: center;
+}
+
+.btn-enviar {
+  color: #d0ff00;
+  background-color: black;
+}
+.btn-enviar:hover {
+  background-color: #d0ff00;
+}
+
+.btn-cancelar {
+  color: #ff5757;
+  background-color: black;
+}
+.btn-cancelar:hover {
+  background-color: #ff5757;
+}
+
+.p-alquiler label {
+  color: #ffffff;
+}
+.p-alquiler .form-select {
+  background-color: #cfcfcf;
+}
+
+.p-compra label {
+  color: #ffffff;
+}
+.p-compra .form-select {
+  background-color: #cfcfcf;
+}
+
 body {
   background-color: #191919;
 }
@@ -141,6 +177,9 @@ body {
 .card:hover {
   transform: scale(1.03);
 }
+.card .btn-int {
+  background-color: #d0ff00;
+}
 
 .pie_de_pagina {
   display: flex;
@@ -148,6 +187,8 @@ body {
   font-family: "Signlode";
   justify-content: right;
   color: #9c9c9c;
+  margin: 30px;
+  padding-top: 30px;
 }
 
 h1 {
@@ -160,27 +201,6 @@ h1 {
 }
 h1:hover {
   transform: scale(1.2);
-}
-
-.form-control {
-  display: flex;
-  background-color: rgb(158, 158, 158);
-  align-items: center;
-  justify-content: center;
-}
-
-.p-alquiler label {
-  color: #ffffff;
-}
-.p-alquiler .form-select {
-  background-color: #9c9c9c;
-}
-
-.p-compra label {
-  color: #ffffff;
-}
-.p-compra .form-select {
-  background-color: #9c9c9c;
 }
 
 @media (max-width: 1100px) {

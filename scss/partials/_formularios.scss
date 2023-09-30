@@ -1,0 +1,42 @@
+.form-control{
+    display: flex;
+    background-color: #cfcfcf;
+    justify-content: center;
+}
+
+.btn-enviar{
+    color: #d0ff00;
+    background-color: black;
+    &:hover{
+        background-color: #d0ff00;
+    }
+}
+
+.btn-cancelar{
+    color: #ff5757;
+    background-color: black;
+    &:hover{
+        background-color: #ff5757;
+    }
+    }
+
+.p-alquiler{
+    label{
+        color: #ffffff;
+    }
+
+    .form-select{
+        background-color: #cfcfcf;
+    }
+}
+
+
+.p-compra{
+    label{
+        color: #ffffff;
+    }
+
+    .form-select{
+        background-color: #cfcfcf;
+    }
+}
